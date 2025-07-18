@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="other/imgs/123.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+    <script src="js/typewriter.js"></script>
+    <script src="js/music.js"></script>
+    <script type="text/javascript" src="js/tilt.js"></script>
+</head>
+<body>
+    <div class="music" id="playBtn"> 
+        <a href="#" id="playBtn">
+            <svg class="music-icon" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)">
+                <g id="SVGRepo_iconCarrier"> 
+                    <path d="M694.018 926.244c-27.296 18.796-27.3 49.269 0 68.067l509.836 351.074c27.296 18.797 49.424 7.18 49.424-25.959V601.13c0-33.133-22.125-44.757-49.424-25.959L694.018 926.244Z" fill-rule="evenodd"></path> 
+                </g>
+            </svg>
+        </a>
+    </div>
+    <audio id="myAudio">
+        <source src="other/music/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <div class="card">
+                <img class="card-avatar" src="other/imgs/avatar.jpg">
+                <h1 class="nick">nickname</h1>
+                <h2 class="pronouns">he/him</h2>
+                <span class="badge">developer</span>
+                <div class="location">
+                    <svg class="location-logo" viewBox="-3 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#caf5a3" stroke-width="0.16"></g><g id="SVGRepo_iconCarrier"> <title>pin_fill_sharp_circle [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke-width="0.0002" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-223.000000, -5399.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M174,5248.219 C172.895,5248.219 172,5247.324 172,5246.219 C172,5245.114 172.895,5244.219 174,5244.219 C175.105,5244.219 176,5245.114 176,5246.219 C176,5247.324 175.105,5248.219 174,5248.219 M174,5239 C170.134,5239 167,5242.134 167,5246 C167,5249.866 174,5259 174,5259 C174,5259 181,5249.866 181,5246 C181,5242.134 177.866,5239 174,5239" id="pin_fill_sharp_circle-[#ffffff]"> </path> </g> </g> </g> </g></svg>
+                    <p class="location-text">hell</p>
+                </div>
+                <div class="icons">
+                    <a target="_blank" href="https://github.com/"><img src="other/imgs/github.png" class="icons-logo"></a>
+                    <a target="_blank" href="https://instagram.com/"><img src="other/imgs/ig.png" class="icons-logo"></a>
+                    <a target="_blank" href="https://www.linkedin.com/"><img src="other/imgs/linkedin.png" class="icons-logo"></a>
+                </div>
+                <div class="discord">
+                    <img class="discord-avatar" src="other/imgs/avatar.jpg">
+                    <h2 class="discord-nick">nickname</h2>
+                    <a target="_blank" href="https://discord.com/users/your_discord_id"><span class="profile">Profile</span></a>
+                </div>
+        </div>
+    </div>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"), {
+		    max: 10,
+		    speed: 150,
+            reverse: true,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            glare: false,
+	    });
+
+	VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>
